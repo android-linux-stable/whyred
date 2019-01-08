@@ -2875,7 +2875,7 @@ static ext4_group_t ext4_has_uninit_itable(struct super_block *sb)
 			continue;
 
 		if (!(gdp->bg_flags & cpu_to_le16(EXT4_BG_INODE_ZEROED)))
-			break;
+   			break;
 	}
 
 	return group;
